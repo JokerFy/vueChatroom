@@ -4,6 +4,7 @@ import Index from '../views/index/index'
 import Chat from '../views/chat/index'
 import Center from '../views/center/index'
 import Main from '../views/layout/index'
+import Login from '../views/common/login'
 
 Vue.use(Router)
 
@@ -17,6 +18,12 @@ const mainRoutes = [{
     { path: '/chat', component: Chat, name: 'index', meta: { title: '通讯录' } },
     { path: '/center', component: Center, name: 'index', meta: { title: '个人中心' } }
   ]
+},
+{
+  path: '/login',
+  component: Login,
+  name: 'login',
+  meta: { title: '登录' }
 }
 ]
 
